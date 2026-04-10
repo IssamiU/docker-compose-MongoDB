@@ -22,4 +22,4 @@ app.get('/items/:id', async (req, res) => res.json(await Item.findById(req.param
 app.put('/items/:id', async (req, res) => res.json(await Item.findByIdAndUpdate(req.params.id, req.body)));
 app.delete('/items/:id', async (req, res) => res.json(await Item.findByIdAndDelete(req.params.id)));
 
-app.listen(3000, () => console.log('API 3000'));
+app.listen(3001, () => console.log('API 3001'));
